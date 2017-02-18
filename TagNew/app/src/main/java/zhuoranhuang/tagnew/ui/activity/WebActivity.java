@@ -5,11 +5,11 @@ import android.os.Bundle;
 import zhuoranhuang.tagnew.R;
 import zhuoranhuang.tagnew.app.BaseActivity;
 
-public class SettingActivity extends BaseActivity {
+public class WebActivity extends BaseActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_setting);
+        setContentView(R.layout.activity_web);
     }
 }
