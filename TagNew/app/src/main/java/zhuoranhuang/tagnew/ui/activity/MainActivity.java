@@ -1,15 +1,20 @@
 package zhuoranhuang.tagnew.ui.activity;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import zhuoranhuang.tagnew.R;
+import zhuoranhuang.tagnew.app.BaseActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
     }
 }
