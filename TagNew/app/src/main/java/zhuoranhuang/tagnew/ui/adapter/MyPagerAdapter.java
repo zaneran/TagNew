@@ -4,6 +4,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import zhuoranhuang.tagnew.ui.fragment.AndroidFragment;
 import zhuoranhuang.tagnew.ui.fragment.BeautyFragment;
 import zhuoranhuang.tagnew.ui.fragment.FavoritesFragment;
@@ -22,6 +25,16 @@ public class MyPagerAdapter extends FragmentStatePagerAdapter {
     public MyPagerAdapter(FragmentManager fm, int Fragment_Num) {
         super(fm);
         this.Fragment_Num = Fragment_Num;
+    }
+
+    @Override
+    public CharSequence getPageTitle(int position){
+        List<String> tab_title = new ArrayList<>();
+        tab_title.add("Android");
+        tab_title.add("Beauty");
+        tab_title.add("iOS");
+        tab_title.add("Favorites");
+        return tab_title.get(position);
     }
 
     @Override
