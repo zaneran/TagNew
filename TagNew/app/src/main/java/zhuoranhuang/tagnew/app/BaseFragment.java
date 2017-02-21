@@ -20,7 +20,6 @@ public class BaseFragment extends Fragment {
         // Required empty public constructor
     }
 
-
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -36,4 +35,5 @@ public class BaseFragment extends Fragment {
     public void injectViews(View view){
         unbinder = ButterKnife.bind(this, view);
     }
+
 }
